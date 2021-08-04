@@ -1,5 +1,5 @@
 const WebSocket = require("ws");
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 const wss = new WebSocket.Server({ port: port });
 const time = new Date();
 //  Creating websocket connetion
