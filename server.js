@@ -4,7 +4,6 @@ const wss = new WebSocket.Server({ port: port });
 const time = new Date();
 //  Creating websocket connetion
 wss.on("connection", (ws) => {
- 
   let userName;
   // Run when user send data
   ws.on("message", (rawData) => {
@@ -77,3 +76,4 @@ wss.on("connection", (ws) => {
     });
   });
 });
+console.log(1);
